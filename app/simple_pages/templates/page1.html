@@ -29,7 +29,7 @@
                     col-12">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html"> <h2>Project 1 - GIT</h2></a>
+                <a class="navbar-brand" href="index.html"> <h2>Project 1 - Shrut</h2></a>
 
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
@@ -58,16 +58,11 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="content/contact.html">Contact</a>
+                            <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
-
-        </div>
-    </div>
-</div>
 
 <h1><center><strong>Git</strong></center></h1>
 <p><center>Git is software tracking changes in any set of files, usually for coordinating work among
@@ -93,5 +88,9 @@ once initiated and can be used for teh Master or developing stage.</p>
 <h3>Repositories</h3>
 <p>A repository stores all your files for a project. It also includes the history and commits you have made thus far. They can be public or private on git depending on your prefernce</p>
 
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
