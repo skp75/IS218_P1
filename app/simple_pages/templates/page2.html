@@ -65,19 +65,19 @@
 <p><center>Docker is an open source for developing and running applications. It uses an OS level virtualization in packages which are containers.
         It can build and develop applications, then deploy and manage the containers.</center></p>
 
-<h3>Containers</h3>
+<h4>Containers</h4>
 <p>A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
     A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application. It is made possible by process isolation
     and virtualization that is built into the Linux Kernel. </p>
 
-<h3>Images</h3>
+<h4>Images</h4>
 <p>A Docker image is a file used to execute code in a Docker container. Docker images act as a set of instructions to build a Docker container, like a template which contains a set of instructions.</p>
 
             <br>
 
-<h6>Link to the docker hub
+<h5>Link to the docker hub
 <a href="https://hub.docker.com/repository/docker/skp75/is218_p1">Repository</a>.
-</h6>
+</h5>
             <br>
 
 <h3>Docker Commands</h3>
@@ -94,8 +94,13 @@
     <li>docker build: This command is used to build an image from a specified docker file</li>
 </ul>
 
-<h5>How to start the project and how to access the container with the terminal using just terminal commands and not PyCharm </h5>
-            <p></p>
+<h4>How to start the project and how to access the container with the terminal using just terminal commands and not PyCharm </h4>
+            <p>To start a project and access it just with the terminal, you need to open up a new terminal. This can be git bash or powershell. Firstly, open up a new project and on the terminal you need to use
+            the build command to build a container image that you can see in the docker hub. This shows if the container is active and the port that is assigned to it. You can also view the container in the terminal
+            using docker ps which shows all the 'online' containers and their value ids.</p>
+            <br>
+            <p>You can also run the container as any time to make it active by using the docker run -dp command followed by the container name. This will create a mapping of the host port too. All this can once again
+            be seen on the docker hub menu too.</p>
 
 
 
