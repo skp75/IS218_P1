@@ -14,10 +14,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
         <title>Project 1 - GIT</title>
-
-
+    {% endblock %}
 </head>
-{% endblock %}
+
 
 <body>
 <div class="container-fluid">
@@ -29,7 +28,7 @@
                     col-12">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html"> <h2>Project 1 - Shrut</h2></a>
+                <a class="navbar-brand" href="{{ url_for('simple_pages.show', page="index")}}"> <h2>Project 1 - Shrut</h2></a>
 
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
@@ -63,6 +62,9 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+    </div>
+</div>
 
 <h1><center><strong>Git</strong></center></h1>
 <p><center>Git is software tracking changes in any set of files, usually for coordinating work among
@@ -89,8 +91,5 @@ once initiated and can be used for teh Master or developing stage.</p>
 <p>A repository stores all your files for a project. It also includes the history and commits you have made thus far. They can be public or private on git depending on your prefernce</p>
 
 
-        </div>
-    </div>
-</div>
 </body>
 </html>
