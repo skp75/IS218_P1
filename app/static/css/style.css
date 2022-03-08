@@ -1,3 +1,110 @@
+/*DEVELOPER: Shrut Patel, IS117-101, Fall, 2021 */
 body {
-font-size: 200%;
+  background: #e8e6a9;
+}
+
+h2 {
+  font-family: Chalkduster, fantasy ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  color:  white;
+  background-color: #BD9C0E;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.footer {
+  color: #0D0808  ;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C39800;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slides-item {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 100px;
+  height: 400px;
+  justify-content: center;
+  margin: 0 1rem;
+  position: relative;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform .5s;
+  width: 100%;
+}
+
+.carousel__nav {
+  padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: .5rem;
+  position: relative;
+  text-decoration: none;
+  width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slide-1 {
+  background-color: #fdc;
+}
+
+.slide-2 {
+  background-color: #bfd;
+}
+
+.slide-3 {
+  background-color: #cdf;
+}
+
+.slide-4 {
+  background-color: #dca;
 }
