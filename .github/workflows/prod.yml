@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: skp75/IS218_P1
+          images: skp75/is218_p1
 
       - name: Build and push
         uses: docker/build-push-action@v2
