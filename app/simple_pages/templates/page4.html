@@ -73,45 +73,22 @@
 
             <br>
 
-<h4>Containers</h4>
-<p>A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
-    A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application. It is made possible by process isolation
-    and virtualization that is built into the Linux Kernel. </p>
-
-<h4>Images</h4>
-<p>A Docker image is a file used to execute code in a Docker container. Docker images act as a set of instructions to build a Docker container, like a template which contains a set of instructions.</p>
+<h4>How the Project was set up to use Github and Github actions</h4>
+<p>The Project was set up to use Github in two different ways. Firstly, on Pycharm it was set up that whenever you commit the project, it updates the changed files on Github. This not only keeps a source online, but
+makes sure you can go to a previous commit if need be. Secondly, another thing that was used is the Github Actions. This is where secrets were added for the docker username (DOCKER_USERNAME),
+    docker password (DOCKER_PASSWORD), and the heroku api key from the app (HEORUKU_API_KEY). This allowed Github to connect to the docker container and Heroku app and update it or deploy it over there.</p>
 
             <br>
 
-<h5>Link to the docker hub
-<a href="https://hub.docker.com/repository/docker/skp75/is218_p1">Repository</a>.
-</h5>
+<h4>How to deploy master to a production server</h4>
+            <p>To deploy a master to a production server you need to create a production file. In this project there is the prod.yml and prod_awake.yml that when you send a pull request to the master, it is able to deploy the
+            same last changes you made to the developmental stage to the prod app and deploy it.</p>
+
             <br>
 
-<h3>Docker Commands</h3>
-<ul>
-    <li>docker run: This command is used to create a container from an image</li>
-    <li>docker ps: This command is used to list the running containers with their information ex. container id</li>
-    <li>docker ps -a: This command is used to show all the running and exited containers</li>
-    <li>docker stop: This command stops a running container. Information can be found from docker ps</li>
-    <li>docker kill: This command kills the container and stops the process immediately. This forcefully kills is and overwrites any error</li>
-    <li>docker commit: This command creates a new image of an edited container on the local system</li>
-    <li>docker push: This command is used to push an image to the docker hub repository</li>
-    <li>docker pull: This command is used to pull images from the docker repository</li>
-    <li>docker rm: This command is used to delete a stopped container</li>
-    <li>docker build: This command is used to build an image from a specified docker file</li>
-</ul>
-
-<h4>How to start the project and how to access the container with the terminal using just terminal commands and not PyCharm </h4>
-            <p>To start a project and access it just with the terminal, you need to open up a new terminal. This can be git bash or powershell. Firstly, open up a new project and on the terminal you need to use
-            the build command to build a container image that you can see in the docker hub. This shows if the container is active and the port that is assigned to it. You can also view the container in the terminal
-            using docker ps which shows all the 'online' containers and their value ids.</p>
-            <br>
-            <p>You can also run the container as any time to make it active by using the docker run -dp command followed by the container name. This will create a mapping of the host port too. All this can once again
-            be seen on the docker hub menu too.</p>
-
-
-
+<h4>How to deploy an image of your project to Dockerhub when master is updated</h4>
+            <p>To deploy an image of the project to the docker hub when the master is updated, it creates a container on Dockerhub automatically because of the Docker file in the project. This is also from the secret key that
+            was entered at the start that allows this access.</p>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
