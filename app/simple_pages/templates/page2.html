@@ -54,8 +54,17 @@
                                 <a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">Contact</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Project-2
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page5")}}">Glossary</a>
+                                <a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page6")}}">AAA testing</a>
+                                <a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page7")}}">OOPs</a>
+                                <a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page8")}}">SOLID</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
