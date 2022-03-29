@@ -116,25 +116,32 @@ when you specify the variable. Ex. float(x), print(type(x)).</p>
     of a fixed sequence of method invocations with fixed arguments that explores a particular aspect of the behavior of the class under test. Refer to more unit testing information for your code in the: <a href="{{ url_for('simple_pages.show', page="page6")}}">AAA testing</a></p>
 
 <h4>Static</h4>
-<p></p>
+<p>A static method is a method that belongs to a class, but it does not belong to an instance of that class and this method can be called without the instance or object of that class. Non-static methods can access any static method
+    and static variable, without creating an instance of the object. An example in the calculator project is: Def add(tuple_list) – static method, History =[] is an array and is static. </p>
 
 <h4>Instance method</h4>
-<p></p>
+<p>Instance method are methods which require an object of its class to be created before it can be called. To invoke a instance method, we have to create an Object of the class in which the method is defined. In the calculator project,
+we have many instance methods such as the add, subtract, and get result. </p>
 
 <h4>Instance property</h4>
-<p></p>
+<p>An instance property is a Python variable belonging to only one object. It is only accessible in the scope of the object and it is defined inside the constructor function of a class.</p>
 
 <h4>Static method</h4>
-<p></p>
+<p>Static methods, much like class methods, are methods that are bound to a class rather than its object. They do not require a class instance creation. So, they are not dependent on the state of the object.</p>
 
 <h4>Static property</h4>
-<p></p>
+<p>A static property acts somewhat like a globally accessible function or variable. Simply import the class, and you can read the same value from anywhere else in the program. It remains consistent throughout the class and can be
+    easily called. </p>
 
 <h4>Encapsulation</h4>
-<p></p>
+<p>Encapsulation describes the concept of bundling data and methods within a single unit. So, for example, when you create a class, it means you are implementing encapsulation. A class is an example of
+    encapsulation as it binds all the data members (instance variables) and methods into a single unit. For example, in the calculator project, calculation = addition.create(tuple) is showcasing encapsulation
+    because it holds its data and method in one object in one place. It combines its functionality. </p>
 
 <h4>Inheritance</h4>
-<p></p>
+<p>Inheritance refers to defining a new class with little or no modification to an existing class. The new class is called derived (or child) class and the one from which it inherits is called the base (or parent) class. It is like
+a tree where it branches from the top and everything can be accessed from the top (parent class). In the calculator project, Class addition(calculation) is inheritance. In order to obey the single  principle, there is one method
+    that creates any type of calculation type class. </p>
 
 <h4>Polymorphism</h4>
 <p></p>
