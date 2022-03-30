@@ -71,28 +71,25 @@
             </nav>
 
 <h1><center><strong>AAA testing (Arrange-Act-Assert)</strong></center></h1>
-<p><center>Git is software tracking changes in any set of files, usually for coordinating work among
-programmers developing source code during software development. It is a DevOps tool for source code
-management. It is free and open-source that enables multiple developers working together</center></p>
+<p><center>The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It suggests that you should divide your test method into three sections:
+            arrange, act and assert. Each one of them only responsible for the part in which they are named after. This pattern has several significant benefits. It creates
+            a clear separation between a test's setup, operations, and results. This structure makes the code easier to read and understand. If you place the steps in order
+            and format your code to separate them, you can scan a test and quickly comprehend what it does.
+<br>
+It also enforces a certain degree of discipline when you write your tests. You have to think clearly about the three steps your test will perform. It makes tests more natural
+            to write at the same time since you already have an outline.</center></p>
 
-<h3>Branches</h3>
+<h4>Arrange</h4>
 <p>A branch is a version of the repository that diverges from the main working project which is the master branch It allows work to continue without changing the master branch. A Git project
     can have more than one branch. These branches are a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug, you spawn a new branch to summarize your changes.</p>
+ <br>
 
-<h3>Merge</h3>
-<p>Merging is a process to connect the forked history. It is able to bring the contents of another branch to another repo. It joins two or more development history together. Merge all commits
-    on the specified branch not already present on the current branch. It is used to maintain distinct lines of development; at some stage, you want to merge the changes in one branch.</p>
+<h4>Act</h4>
+<p></p>
 
-<h3>Commit</h3>
-<p>Commits records the changes you make in a repository. It has data and a commit message at each state that tells you the new update you made. It then fetches updates from the stage environment.
-You can revert back to an old commit incase you have made a mistake or need to see an older version.</p>
-
-<h3>Tags</h3>
-<p>Tags make a point as a specific point in Git history. They can be used to mark a commit stage if it is relevant and you need to come back to it. Or the version of something. They also do not change
-once initiated and can be used for teh Master or developing stage.</p>
-
-<h3>Repositories</h3>
-<p>A repository stores all your files for a project. It also includes the history and commits you have made thus far. They can be public or private on git depending on your prefernce</p>
+<br>
+ <h4>Assert</h4>
+ <p></p>
 
     <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
