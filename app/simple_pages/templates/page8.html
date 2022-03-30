@@ -71,28 +71,41 @@
             </nav>
 
 <h1><center><strong>SOLID (Five Principles Of OOP)</strong></center></h1>
-<p><center>Git is software tracking changes in any set of files, usually for coordinating work among
-programmers developing source code during software development. It is a DevOps tool for source code
-management. It is free and open-source that enables multiple developers working together</center></p>
+<p><center>The SOLID Principles are five principles of Object-Oriented class design. They are a set of rules and best practices to follow while designing a class structure.
+        These five principles help us understand the need for certain design patterns and software architecture in general. </center></p>
+<br>
 
-<h3>Branches</h3>
-<p>A branch is a version of the repository that diverges from the main working project which is the master branch It allows work to continue without changing the master branch. A Git project
-    can have more than one branch. These branches are a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug, you spawn a new branch to summarize your changes.</p>
+<p>
+    <br>
+    S (Single-responsibility Principle): A class should have one and only one reason to change, meaning that a class should have only one job.
+    <br>
+    O (Open-closed Principle): Objects or entities should be open for extension but closed for modification. This means that a class should be extendable without modifying the class itself.
+    <br>
+    L (Liskov Substitution Principle): This means that every subclass or derived class should be substitutable for their base or parent class.
+    <br>
+    I (Interface Segregation Principle): A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+    <br>
+    D (Dependency Inversion Principle): Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+    <br>
+</p>
 
-<h3>Merge</h3>
-<p>Merging is a process to connect the forked history. It is able to bring the contents of another branch to another repo. It joins two or more development history together. Merge all commits
-    on the specified branch not already present on the current branch. It is used to maintain distinct lines of development; at some stage, you want to merge the changes in one branch.</p>
 
-<h3>Commit</h3>
-<p>Commits records the changes you make in a repository. It has data and a commit message at each state that tells you the new update you made. It then fetches updates from the stage environment.
-You can revert back to an old commit incase you have made a mistake or need to see an older version.</p>
+<h3><center>How does the calculator project demonstrate SOLID and identifies the use of design patterns such as the factory pattern</center></h3>
+<br>
+<br>
 
-<h3>Tags</h3>
-<p>Tags make a point as a specific point in Git history. They can be used to mark a commit stage if it is relevant and you need to come back to it. Or the version of something. They also do not change
-once initiated and can be used for teh Master or developing stage.</p>
+<h5><center>S - (Single-responsibility Principle)</center></h5>
+            <p>The calculator project demonstrates the Single responsibility very easily as the object to add, subtract, and get results have one purpose or job as to what it says.</p>
 
-<h3>Repositories</h3>
-<p>A repository stores all your files for a project. It also includes the history and commits you have made thus far. They can be public or private on git depending on your prefernce</p>
+            <br>
+            <br>
+
+<h5><center>O - (Open-closed Principle)</center></h5>
+            <p>The calculator project demonstrates the Single responsibility very easily as the object to add, subtract, and get results have one purpose or job as to what it says.</p>
+
+
+
+
 
     <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
