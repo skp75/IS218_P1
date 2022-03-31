@@ -71,25 +71,30 @@
             </nav>
 
 <h1><center><strong>AAA testing (Arrange-Act-Assert)</strong></center></h1>
-<p><center>The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It suggests that you should divide your test method into three sections:
+<p>The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It suggests that you should divide your test method into three sections:
             arrange, act and assert. Each one of them only responsible for the part in which they are named after. This pattern has several significant benefits. It creates
             a clear separation between a test's setup, operations, and results. This structure makes the code easier to read and understand. If you place the steps in order
             and format your code to separate them, you can scan a test and quickly comprehend what it does.
 <br>
 It also enforces a certain degree of discipline when you write your tests. You have to think clearly about the three steps your test will perform. It makes tests more natural
-            to write at the same time since you already have an outline.</center></p>
+            to write at the same time since you already have an outline.</p>
 
 <h4>Arrange</h4>
-<p>A branch is a version of the repository that diverges from the main working project which is the master branch It allows work to continue without changing the master branch. A Git project
-    can have more than one branch. These branches are a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug, you spawn a new branch to summarize your changes.</p>
+<p>Perform the setup and initialization required for the test.</p>
  <br>
 
 <h4>Act</h4>
-<p></p>
+<p>Take action(s) required for the test.</p>
 
 <br>
  <h4>Assert</h4>
- <p></p>
+ <p>Verify the outcome(s) of the test.</p>
+
+<h4><center>Why is it important</center></h4>
+ <p>Writing tests is essential to be able to maintain clean and usable code. It may not be the most exciting, but it certainly is necessary for
+     preventing problems with your code later on. A sufficiently large and complex code base will inevitably contain bugs and issues. It not only allows
+ you to check your work in a more efficient manner, but you can also find the flaws of the program quicker. The calculator project checks the grammar and
+ makes sure it makes sense with the add and subtract, but does the same when you add a divide and other arithmetic functions.</p>
 
     <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
