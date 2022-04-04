@@ -71,29 +71,32 @@
             </nav>
 
 <h1><center><strong>Object Oriented Programming</strong></center></h1>
-<p><center>Git is software tracking changes in any set of files, usually for coordinating work among
-programmers developing source code during software development. It is a DevOps tool for source code
-management. It is free and open-source that enables multiple developers working together</center></p>
+<p><center>OP or Object Oritented Programming is a model that uses objects and classes in programming. It is considered the standard way to code for programmers as the structure uses classes (the blueprint)
+        to create different instances of objects. The Calculator project was a template made for the use </center></p>
 
-<h3>Branches</h3>
-<p>A branch is a version of the repository that diverges from the main working project which is the master branch It allows work to continue without changing the master branch. A Git project
-    can have more than one branch. These branches are a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug, you spawn a new branch to summarize your changes.</p>
+<h4>Encapsulation</h4>
+<p>Encapsulation describes the concept of bundling data and methods within a single unit. So, for example, when you create a class, it means you are implementing encapsulation. A class is an example of
+    encapsulation as it binds all the data members (instance variables) and methods into a single unit. For example, in the calculator project, calculation = addition.create(tuple) is showcasing encapsulation
+    because it holds its data and method in one object in one place. It combines its functionality. An example from the calculator project would be: calculation = addition.create(tuple) because it holds its data
+    and method in one object in one place.  </p>
 
-<h3>Merge</h3>
-<p>Merging is a process to connect the forked history. It is able to bring the contents of another branch to another repo. It joins two or more development history together. Merge all commits
-    on the specified branch not already present on the current branch. It is used to maintain distinct lines of development; at some stage, you want to merge the changes in one branch.</p>
+<h4>Inheritance</h4>
+<p>Inheritance refers to defining a new class with little or no modification to an existing class. The new class is called derived (or child) class and the one from which it inherits is called the base (or parent) class. It is like
+a tree where it branches from the top and everything can be accessed from the top (parent class). In the calculator project, class addition(calculation) is inheritance. In order to obey the single  principle, there is one method
+    that creates any type of calculation type class. </p>
 
-<h3>Commit</h3>
-<p>Commits records the changes you make in a repository. It has data and a commit message at each state that tells you the new update you made. It then fetches updates from the stage environment.
-You can revert back to an old commit incase you have made a mistake or need to see an older version.</p>
+<h4>Polymorphism</h4>
+<p>Polymorphism is the ability of any data to be processed in more than one form. The most common use of polymorphism in object-oriented programming occurs when a parent class reference is used to refer to a child class object.
+    Here we will see how to represent any function in many types and many forms. Also, polymorphism lets us define methods in the child class that have the same name as the methods in the parent class.</p>
 
-<h3>Tags</h3>
-<p>Tags make a point as a specific point in Git history. They can be used to mark a commit stage if it is relevant and you need to come back to it. Or the version of something. They also do not change
-once initiated and can be used for teh Master or developing stage.</p>
+<h4>Abstraction</h4>
+<p>Abstraction is a process of hiding the real implementation of the method by only showing a method signature. An example from the calculator projetc would be: calculation = addition.create(tuple)- Abstraction
+    because the add method calls another method that does another thing that is more complicated. This is both part of abstract and encapsulation. </p>
 
-<h3>Repositories</h3>
-<p>A repository stores all your files for a project. It also includes the history and commits you have made thus far. They can be public or private on git depending on your prefernce</p>
 
+            <br>
+            <br>
+            <br>
     <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
         Message: {{ mymessage }} {{ format_price(100) }}
